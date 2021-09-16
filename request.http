@@ -1,0 +1,51 @@
+POST http://localhost:8000/api/wilder HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Test",
+    "city": "Cheptainville",
+    "skills": [
+        {"title": "Sleep", "votes": 9 },
+        {"title": "Eat", "votes": 8 }
+    ]
+}
+
+###
+
+GET http://localhost:8000/api/wilder HTTP/1.1
+content-type: application/json
+
+###
+
+GET http://localhost:8000/api/wilder/id HTTP/1.1
+content-type: application/json
+
+{
+    "_id": "6141c3772bc9b5b4d46b0eec"
+
+}
+
+###
+
+PUT http://localhost:8000/api/wilder HTTP/1.1
+content-type: application/json
+
+{
+    "_id": "61430e075851ab2ce4c64c7e",
+    "name": "Robert",
+    "city": "Cheptainville",
+    "skills": [
+        {"title": "Sleep", "votes": 9 },
+        {"title": "Eat", "votes": 8 }
+    ]
+}
+
+###
+
+DELETE http://localhost:8000/api/wilder HTTP/1
+content-type: application/json
+
+{
+    "_id": "61431b02a0983ae2dd316974"
+
+}
